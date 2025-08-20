@@ -31,6 +31,7 @@ class AppCicdPipelineStack(cdk.Stack):
             "Synth",
             input=source,
             commands=[
+                "npm install -g aws-cdk",
                 "pip install --upgrade pip",
                 "pip install -r infra/requirements.txt",
                 "cd infra",
