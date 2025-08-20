@@ -31,8 +31,6 @@ class AppCicdPipelineStack(cdk.Stack):
             "Synth",
             input=source,
             commands=[
-                "python3 -m venv .venv",
-                "source .venv/bin/activate",
                 "pip install --upgrade pip",
                 "pip install -r infra/requirements.txt",
                 "cd infra",

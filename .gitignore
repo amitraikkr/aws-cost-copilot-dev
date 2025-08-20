@@ -55,8 +55,11 @@ Thumbs.db
 
 # --- Secrets ---
 infra/config/*.json
-!infra/config/dev.example.json
-!infra/config/prod.example.json
+scripts/*.sh
+!infra/config/dev.local.json
+!infra/config/prod.local.json
+
+
 
 # AWS / Local
 .aws/
@@ -66,3 +69,4 @@ infra/config/*.json
 *.secret
 .env
 .env.*
+cdk.context.json
